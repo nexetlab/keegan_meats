@@ -1,0 +1,354 @@
+/* Add this to each page's CSS file */
+.page-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+@media (max-width: 768px) {
+  .page-container {
+    padding: 0 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .page-container {
+    padding: 0 0.5rem;
+  }
+}
+
+/* src/pages/About/About.css */
+.about {
+  padding-top: 80px;
+}
+
+/* Hero Section */
+.about-hero {
+  background: linear-gradient(135deg, #8B0000 0%, #660000 100%);
+  color: white;
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.about-title {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.about-subtitle {
+  font-size: 1.2rem;
+  opacity: 0.9;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* History Section */
+.about-history {
+  padding: 4rem 0;
+  background: white;
+}
+
+.history-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.history-text h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: #2F2F2F;
+}
+
+.history-text p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+  color: #666;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.stat {
+  text-align: center;
+}
+
+.stat-number {
+  display: block;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #8B0000;
+  margin-bottom: 0.5rem;
+}
+
+.stat-label {
+  font-size: 0.9rem;
+  color: #666;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.history-image {
+  position: relative;
+}
+
+.image-placeholder {
+  width: 100%;
+  height: 400px;
+  background: linear-gradient(135deg, #F5F5DC 0%, #FAFAFA 100%);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #666;
+  font-style: italic;
+  border: 2px dashed #e0e0e0;
+}
+
+/* Values Section */
+.about-values {
+  padding: 4rem 0;
+  background: #FAFAFA;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  color: #2F2F2F;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.value-item {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.value-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.value-icon {
+  font-size: 3rem;
+  color: #8B0000;
+  margin-bottom: 1rem;
+}
+
+.value-item h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #2F2F2F;
+}
+
+.value-item p {
+  color: #666;
+  line-height: 1.6;
+}
+
+/* Team Section */
+.about-team {
+  padding: 4rem 0;
+  background: white;
+}
+
+.team-description {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto 3rem;
+  font-size: 1.1rem;
+  color: #666;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.team-card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.team-card:hover {
+  transform: translateY(-5px);
+}
+
+.team-image {
+  height: 250px;
+  background: linear-gradient(135deg, #F5F5DC 0%, #FAFAFA 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #666;
+  font-style: italic;
+  border-bottom: 2px dashed #e0e0e0;
+}
+
+.team-info {
+  padding: 1.5rem;
+}
+
+.team-info h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+  color: #2F2F2F;
+}
+
+.team-role {
+  color: #8B0000;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.team-bio {
+  color: #666;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+/* Shop Info Section */
+.about-shop {
+  padding: 4rem 0;
+  background: #FAFAFA;
+}
+
+.shop-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.shop-text h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: #2F2F2F;
+}
+
+.shop-text p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 2rem;
+  color: #666;
+}
+
+.shop-details {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.detail-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.detail-item strong {
+  color: #2F2F2F;
+  font-weight: 600;
+}
+
+.detail-item span {
+  color: #666;
+}
+
+/* Responsive Design */
+@media (max-width: 968px) {
+  .history-content,
+  .shop-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .history-image,
+  .shop-image {
+    order: -1;
+  }
+  
+  .stats {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .about-title {
+    font-size: 2.5rem;
+  }
+  
+  .section-title {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-hero {
+    padding: 3rem 0;
+  }
+  
+  .about-title {
+    font-size: 2rem;
+  }
+  
+  .about-subtitle {
+    font-size: 1.1rem;
+  }
+  
+  .about-history,
+  .about-values,
+  .about-team,
+  .about-shop {
+    padding: 3rem 0;
+  }
+  
+  .values-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .team-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .about {
+    padding-top: 70px;
+  }
+  
+  .about-hero {
+    padding: 2rem 0;
+  }
+  
+  .about-title {
+    font-size: 1.8rem;
+  }
+  
+  .value-item,
+  .team-card {
+    padding: 1.5rem;
+  }
+}
