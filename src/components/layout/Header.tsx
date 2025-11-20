@@ -2,7 +2,6 @@
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { HiMenu, HiX } from 'react-icons/hi';
-import { FaHeart } from 'react-icons/fa';
 import './Header.css';
 
 const Header = () => {
@@ -21,7 +20,11 @@ const Header = () => {
       <nav className="nav">
         {/* Logo */}
         <Link to="/" className="logo">
-          <FaHeart className="logoIcon" />
+          <img 
+            src="/images/keegan_bg.png" 
+            alt="Keegan Meats Logo" 
+            className="logoIcon"
+          />
           <span>Keegan Meats</span>
         </Link>
 
