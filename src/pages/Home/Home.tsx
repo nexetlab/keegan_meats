@@ -51,6 +51,13 @@ const Home = () => {
                 </div>
               </div>
             </div>
+            <div className="hero-logo">
+              <img 
+                src="/images/keegan_bg.png" 
+                alt="Keegan Meats Logo" 
+                className="hero-logo-image"
+              />
+            </div>
           </div>
         </div>
       </section>
